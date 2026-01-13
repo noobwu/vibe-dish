@@ -1,0 +1,109 @@
+.preference-panel {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.panel-header {
+  margin-bottom: 8px;
+}
+
+.panel-title {
+  margin: 0 !important;
+  color: #333;
+  font-weight: 600;
+}
+
+.panel-subtitle {
+  color: #666;
+  font-size: 14px;
+}
+
+.preference-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.preference-label {
+  font-weight: 500;
+  color: #333;
+  font-size: 15px;
+}
+
+.preference-radio {
+  width: 100%;
+}
+
+.preference-radio .ant-radio-button-wrapper {
+  flex: 1;
+  text-align: center;
+}
+
+.preference-slider {
+  margin: 8px 0;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.generate-button {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a5a 100%);
+  border: none;
+  border-radius: 8px;
+  height: 48px;
+  padding: 0 32px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+.generate-button:hover {
+  background: linear-gradient(135deg, #ff5252 0%, #e64646 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 107, 107, 0.4);
+}
+
+.random-button {
+  background: white;
+  border: 2px solid #ff6b6b;
+  color: #ff6b6b;
+  border-radius: 8px;
+  height: 48px;
+  padding: 0 32px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.random-button:hover {
+  background: #fff5f5;
+  color: #ff5252;
+  border-color: #ff5252;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .preference-radio .ant-radio-button-wrapper {
+    font-size: 13px;
+    padding: 0 8px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .action-buttons .ant-btn {
+    width: 100%;
+  }
+
+  .generate-button,
+  .random-button {
+    height: 44px;
+  }
+}
